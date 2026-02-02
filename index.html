@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Just One Thing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+  <!-- PASSWORD -->
+  <section class="screen active">
+    <h2>Before we start</h2>
+    <p>There’s a small password 🙂</p>
+    <input type="password" id="password" placeholder="enter here">
+    <button onclick="checkPassword()">Enter</button>
+    <p id="error"></p>
+  </section>
+
+  <!-- INTRO -->
+  <section class="screen">
+    <h2>Hey Hansika</h2>
+    <p>This is something small I made.<br>Nothing serious.</p>
+    <button onclick="next()">Continue</button>
+  </section>
+
+  <!-- HANG OUT -->
+  <section class="screen">
+    <h2>Quick question</h2>
+    <p>Do you wanna hang out sometime?</p>
+    <div class="choices">
+      <button onclick="hangout('yes')">Yes</button>
+      <button onclick="hangout('no')">No</button>
+    </div>
+    <p id="hangoutReply"></p>
+    <button onclick="next()">Next</button>
+  </section>
+
+  <!-- LOVE GIF -->
+  <section class="screen">
+    <img src="love.gif" class="gif">
+    <p>This made me smile.</p>
+    <button onclick="next()">Continue</button>
+  </section>
+
+  <!-- ASK FOR PICS -->
+  <section class="screen">
+    <h2>One more thing</h2>
+    <p>Do you want to see a picture?</p>
+    <div class="choices">
+      <button onclick="showPics()">Yes</button>
+      <button onclick="skipPics()">No</button>
+    </div>
+    <button onclick="next()">Next</button>
+  </section>
+
+  <!-- PICTURES -->
+  <section class="screen">
+    <h2>Just us</h2>
+    <div class="photos">
+      <img src="pic1.jpg">
+      <img src="pic2.jpg">
+    </div>
+    <p>Some moments feel calm.</p>
+    <button onclick="next()">Continue</button>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="screen">
+    <h2>Little quiz</h2>
+    <p>What do you like more?</p>
+    <div class="choices">
+      <button onclick="quiz()">Sunsets</button>
+      <button onclick="quiz()">Mountains</button>
+      <button onclick="quiz()">Food</button>
+    </div>
+    <p id="quizReply"></p>
+    <button onclick="next()">Next</button>
+  </section>
+
+  <!-- END -->
+  <section class="screen">
+    <h2>That’s all</h2>
+    <p>No pressure to reply.<br>Just wanted to do something nice.</p>
+    <small onclick="secret()">There’s something small here</small>
+    <p id="secretText"></p>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
