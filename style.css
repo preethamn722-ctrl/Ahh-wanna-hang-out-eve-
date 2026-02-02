@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  background: #0b0b0b;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+}
+
+.screen {
+  display: none;
+  padding: 60px 20px;
+}
+
+.screen.active {
+  display: block;
+  animation: fade 1s ease;
+}
+
+input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 15px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 22px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.choices button {
+  margin: 10px;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.photos img {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.gif {
+  width: 200px;
+  border-radius: 12px;
+}
+
+small {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
