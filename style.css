@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  background: #0b0b0b;
-  color: #fff;
   font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  color: #2c2c2c;
   text-align: center;
 }
 
@@ -26,17 +26,16 @@ input {
   border: none;
   margin-top: 15px;
 }
-
 button {
   margin-top: 20px;
-  padding: 10px 22px;
-  border-radius: 20px;
+  padding: 12px 26px;
+  border-radius: 25px;
   border: none;
+  background: #ff5f8f;
+  color: white;
+  font-size: 15px;
   cursor: pointer;
-}
-
-.choices button {
-  margin: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .photos {
