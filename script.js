@@ -15,14 +15,23 @@ function checkPassword() {
     document.getElementById("error").innerText = "Try again 🙂";
   }
 }
-
 function hangout(ans) {
   document.getElementById("hangoutReply").innerText =
-    ans === "yes" ? "That sounds nice 🙂" : "That’s okay.";
+    ans === "yes"
+      ? "That made me smile, not gonna lie 😊"
+      : "That’s okay. I still liked making this.";
 }
 
+}
 function quiz() {
-  document.getElementById("quizReply").innerText = "Good choice.";
+  const replies = [
+    "That suits you.",
+    "I kind of expected that 🙂",
+    "That’s very you."
+  ];
+  document.getElementById("quizReply").innerText =
+    replies[Math.floor(Math.random() * replies.length)];
+}
 }
 
 function secret() {
